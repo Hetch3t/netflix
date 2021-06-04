@@ -70,8 +70,10 @@ export const Header = styled.div`
 
 export const Item = styled.div`
   color: white;
+  max-width: 680px;
+  width: 100%;
+  margin: auto;
   margin-bottom: 12px;
-  max-width: 644px;
 
   &:first-of-type {
     margin-top: 3em;
