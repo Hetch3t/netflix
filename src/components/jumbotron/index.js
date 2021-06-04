@@ -7,35 +7,21 @@ import {
   Subtitle,
   Image,
 } from './styles/jumbotron'
+import {
+  createComponent,
+  createComponentChildfree,
+} from '../../helpers/createComponent'
 
-export default function Jumbotron({
-  children,
-  direction = 'row',
-  ...restProps
-}) {
-  return (
-    <Item>
-      <Inner direction={direction}>{children}</Inner>
-    </Item>
-  )
-}
+const Jumbotron = ({ children, direction = 'row' }) => (
+  <Item>
+    <Inner direction={direction}>{children}</Inner>
+  </Item>
+)
 
-Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>
-}
+Jumbotron.Container = createComponent(Container)
+Jumbotron.Pane = createComponent(Pane)
+Jumbotron.Title = createComponent(Title)
+Jumbotron.Subtitle = createComponent(Subtitle)
+Jumbotron.Image = createComponentChildfree(Image)
 
-Jumbotron.Pane = function JumbotronPane({ children, ...restProps }) {
-  return <Pane {...restProps}>{children}</Pane>
-}
-
-Jumbotron.Title = function JumbotronTitle({ children, ...restProps }) {
-  return <Title {...restProps}>{children}</Title>
-}
-
-Jumbotron.Subtitle = function JumbotronSubtitle({ children, ...restProps }) {
-  return <Subtitle {...restProps}>{children}</Subtitle>
-}
-
-Jumbotron.Image = function JumbotronImage({ ...restProps }) {
-  return <Image {...restProps} />
-}
+export default Jumbotron
