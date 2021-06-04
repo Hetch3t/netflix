@@ -1,9 +1,14 @@
-import { JumbotronContainer, FooterContainer } from './containers'
+import {
+  JumbotronContainer,
+  FooterContainer,
+  FaqsContainer,
+} from './containers'
 
 function App() {
   return (
     <>
       <JumbotronContainer />
+      <FaqsContainer />
       <FooterContainer />
     </>
   )
