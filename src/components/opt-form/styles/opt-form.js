@@ -20,6 +20,10 @@ export const Input = styled.input`
   height: 64px;
   padding: 8px;
   box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    border-radius: 4px;
+  }
 `
 
 export const Button = styled.button`
@@ -38,11 +42,12 @@ export const Button = styled.button`
     background: #f40612;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     font-size: 16px;
     height: 48px;
-    margi-top: 20px;
+    margin-top: 16px;
     font-weight: bold;
+    border-radius: 4px;
   }
 
   img {
