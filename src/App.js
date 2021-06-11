@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import * as ROUTES from './constants/routes'
-import { Home, SignIn, SignUp } from './routes'
+import { Home, SignIn, SignUp } from './pages'
 
 function App() {
   return (
