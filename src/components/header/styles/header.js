@@ -3,10 +3,12 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Background = styled.div`
   display: flex;
-  background: url(${({ src }) =>      src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
+  background: url(${({ src }) =>      src ? `images/misc/${src}.jpg` : 'images/misc/home-bg.jpg'})
     top left / cover no-repeat;
   flex-direction: column;
   min-height: 600px;
+
+  border-bottom: 8px solid #222;
 
   @media (orientation: landscape) {
     height: 100vh;
