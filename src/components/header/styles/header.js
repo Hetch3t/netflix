@@ -6,7 +6,7 @@ export const Background = styled.div`
   background: url(${({ src }) =>      src ? `images/misc/${src}.jpg` : 'images/misc/home-bg.jpg'})
     top left / cover no-repeat;
   flex-direction: column;
-  min-height: 600px;
+  min-height: 700px;
 
   border-bottom: 8px solid #222;
 

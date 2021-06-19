@@ -14,6 +14,10 @@ export const Container = styled.div`
   max-width: 480px;
   margin: 100px auto 100px auto;
   padding: 64px;
+
+  @media (max-height: 700px) {
+    margin: auto;
+  }
 `
 
 export const Base = styled.form`
@@ -40,8 +44,8 @@ export const Title = styled.h1`
   margin-bottom: 28px;
   margin-top: 0;
 `
-export const Text = styled.p`
-  color: #737373;
+export const Text = styled.div`
+  color: #8c8c8c;
   font-size: 16px;
   font-weight: 500;
 `
@@ -49,7 +53,7 @@ export const Text = styled.p`
 export const TextSmall = styled.p`
   margin-top: 24px;
   margin-bottom: 0%;
-  color: #8c8c8c;
+  color: #737373;
   font-size: 12px;
   line-height: normal;
 `
@@ -72,7 +76,7 @@ export const Input = styled.input`
   outline: none;
   margin: 8px 0;
   padding: 0px 16px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 
   &:focus {
     border-color: #e50916;
@@ -90,8 +94,8 @@ export const SubmitButton = styled.button`
   text-transform: capitalize;
   font-weight: bold;
   font-size: 16px;
-  transition: all 0.2s ease;
-  margin: 24px 0 12px;
+  transition: all 0.3s ease;
+  margin: 24px 0 36px;
   outline: none;
 
   &:hover,

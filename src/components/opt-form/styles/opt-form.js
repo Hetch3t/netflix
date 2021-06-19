@@ -18,8 +18,11 @@ export const Input = styled.input`
   width: 100%;
   border: 0;
   height: 64px;
-  padding: 8px;
+  padding: 8px 16px;
   box-sizing: border-box;
+  outline: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 
   @media (max-width: 1000px) {
     border-radius: 4px;
@@ -32,11 +35,13 @@ export const Button = styled.button`
   height: 64px;
   background: #e50914;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 16px 32px;
   font-size: 24px;
   border: 0;
   cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 
   &:hover {
     background: #f40612;

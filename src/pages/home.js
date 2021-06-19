@@ -3,17 +3,15 @@ import {
   JumbotronContainer,
   FooterContainer,
   FaqsContainer,
-  HeaderContainer,
+  HeaderContainer
 } from '../containers'
 
 const Home = () => (
   <>
     <HeaderContainer>
       <Feature>
-        <Feature.Title>
-          Unlimited films, TV programmes, series and more.
-        </Feature.Title>
-        <Feature.Subtitle>Watch anywhere. Cancel at anytime.</Feature.Subtitle>
+        <Feature.Title>Unlimited movies, TV shows, and more.</Feature.Title>
+        <Feature.Subtitle>Watch anywhere. Cancel anytime.</Feature.Subtitle>
         <OptForm>
           <OptForm.Input placeholder="Email address" />
           <OptForm.Button>Get Started</OptForm.Button>

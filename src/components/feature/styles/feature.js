@@ -9,10 +9,13 @@ export const Container = styled.div`
 `
 export const Title = styled.h1`
   max-width: 640px;
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 500;
   margin: auto;
 
+  @media (max-width: 1000px) {
+    font-size: 48px;
+  }
   @media (max-width: 600px) {
     font-size: 24px;
   }
