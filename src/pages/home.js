@@ -16,7 +16,7 @@ const Home = () => (
         <Feature.Subtitle>Watch anywhere. Cancel at anytime.</Feature.Subtitle>
         <OptForm>
           <OptForm.Input placeholder="Email address" />
-          <OptForm.Button>Try it now!</OptForm.Button>
+          <OptForm.Button>Get Started</OptForm.Button>
           <OptForm.Break />
           <OptForm.Text>
             Ready to watch? Enter your email above to create an account!
@@ -27,7 +27,6 @@ const Home = () => (
     <JumbotronContainer />
     <FaqsContainer />
     <FooterContainer />
-    {/* </HeaderContainer> */}
   </>
 )
 

@@ -9,7 +9,7 @@ export const Container = styled.div`
 `
 export const Title = styled.h1`
   max-width: 640px;
-  font-size: 40px;
+  font-size: 52px;
   font-weight: 500;
   margin: auto;
 
