@@ -1,20 +1,16 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import * as ROUTES from './constants/routes'
-import { Home, SignIn, SignUp } from './pages'
+import { Home, SignIn, SignUp, Browse } from './pages'
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
-    <Route exact path={ROUTES.HOME}>
-      <Home />
-    </Route>
-    <Route path={ROUTES.SIGN_IN}>
-      <SignIn />
-    </Route>
-    <Route path={ROUTES.SIGN_UP}>
-      <SignUp />
-    </Route>
-    <Route exact path={ROUTES.BROWSE}></Route>
+    <Switch>
+      <Route exact path={ROUTES.HOME} component={Home} />
+      <Route path={ROUTES.SIGN_IN} component={SignIn} />
+      <Route path={ROUTES.SIGN_UP} component={SignUp} />
+      <Route path={ROUTES.BROWSE} component={Browse} />
+    </Switch>
   </Router>
 )
 
